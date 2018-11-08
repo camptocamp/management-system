@@ -6,7 +6,7 @@ migration:
     # install_args: --load=web,web_kanban,session_redis,attachment_s3,logging_json      # Exoscale
     # install_args: --load=web,web_kanban,session_redis,attachment_swift,logging_json   # OVH
     ## For version >= 11.0
-    # install_args: --load=web,session_redis,attachment_s3,logging_json      # Exoscale
+    install_args: --load=web,session_redis,attachment_s3,logging_json      # Exoscale
     # install_args: --load=web,session_redis,attachment_swift,logging_json   # OVH
   versions:
     - version: setup
@@ -15,10 +15,10 @@ migration:
           ## For version >= 12.0
           - odoo -i base --stop-after-init --workers=0 --no-xmlrpc
           - anthem songs.install.pre::main
-        #post:
+        post:
           ## PLATFORM
           ## Choose between the two options : ovh or exoscale
-          #- anthem openerp.addons.cloud_platform.songs::install_exoscale
+          - anthem openerp.addons.cloud_platform.songs::install_exoscale
           #- anthem openerp.addons.cloud_platform.songs::install_ovh
           #- anthem songs.install.accounting::main
           #- anthem songs.install.logistics::main
@@ -38,7 +38,7 @@ migration:
       addons:
         upgrade:
           ## PLATFORM
-          #- cloud_platform_exoscale or cloud_platform_ovh
+          - cloud_platform_exoscale
           #### oca/server-env
           - server_environment
           - server_environment_ir_config_parameter

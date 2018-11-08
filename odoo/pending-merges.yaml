@@ -1,25 +1,22 @@
 # file used with gitaggregate: https://github.com/acsone/git-aggregator
 # please see docs in docs/how-to-integrate-pull-request.md
-#
-# Examples:
-# ./external-src/bank-payment:
-#   remotes:
-#     oca: git@github.com:OCA/bank-payment.git
-#     camptocamp: git@github.com:camptocamp/bank-payment.git
-#   merges:
-#     - oca 12.0
-#       # add module account_invoice_bank_selection
-#     - oca refs/pull/236/head
-#   target: &default_target camptocamp merge-branch-2477-master
-# ./external-src/bank-statement-reconcile:
-#   remotes:
-#     oca: git@github.com:OCA/bank-statement-reconcile.git
-#     camptocamp: git@github.com:camptocamp/bank-statement-reconcile.git
-#   merges:
-#     - oca 12.0
-#     # port account_mass_reconcile
-#     - oca refs/pull/136/head
-#     # port of account_statement_base_import
-#     - oca refs/pull/137/head
-#   target: *default_target
 
+ ./external-src/odoo-cloud-platform:
+   remotes:
+     camptocamp: git@github.com:camptocamp/odoo-cloud-platform.git
+   merges:
+   - camptocamp 12.0
+   # Migration to 12.0
+   - camptocamp refs/pull/38/head
+   target: &default_target camptocamp merge-branch-2477-master
+ ./external-src/server-env:
+   remotes:
+     oca: git@github.com:OCA/server-env.git
+     camptocamp: git@github.com:camptocamp/server-env.git
+   merges:
+     - oca 12.0
+     # [12.0][MIG] server environment from 11.0
+     - oca refs/pull/18/head
+     # [12.0][MIG] server environment ir config parameter
+     - oca refs/pull/15/head
+   target: *default_target
