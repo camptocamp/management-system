@@ -25,4 +25,6 @@ latest (unreleased)
 
 **Build**
 
+* BSCOS-1: Initial build
+
 **Documentation**
