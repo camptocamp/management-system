@@ -4,12 +4,12 @@
 
 import os
 
-# from base64 import b64encode
-# from pkg_resources import resource_string
+from base64 import b64encode
+from pkg_resources import resource_string
 
 import anthem
 
-# from ..common import req
+from ..common import req
 
 MAIN_LANG = "de_DE"
 OPT_LANG = ""
@@ -20,21 +20,21 @@ ALL_LANG = [MAIN_LANG] + (OPT_LANG.split(';') if OPT_LANG else [])
 def setup_company(ctx):
     """ Setup company """
     # load logo on company
-    # logo_content = resource_string(req, 'data/images/company_main_logo.png')
-    # b64_logo = b64encode(logo_content)
+    logo_content = resource_string(req, 'data/images/company_main_logo.png')
+    b64_logo = b64encode(logo_content)
 
     values = {
-        'name': "Cosanum",
-        'street': "",
-        'zip': "",
-        'city': "",
+        'name': "Cosanum AG",
+        'street': "Brandstrasse 28",
+        'zip': "8952",
+        'city': "Schlieren",
         'country_id': ctx.env.ref('base.ch').id,
-        'phone': "+41 00 000 00 00",
-        'fax': "+41 00 000 00 00",
-        'email': "contact@cosanum.ch",
-        'website': "http://www.cosanum.ch",
-        'vat': "VAT",
-        # 'logo': b64_logo,
+        'phone': "+41 43 433 66 66",
+        'email': "info@cosanum.ch",
+        'website': "https://www.cosanum.ch",
+        'vat': "CHE-107.967.501 MWST",
+        'company_registry': "CH-020.3.905.623-1",
+        'logo': b64_logo,
         'currency_id': ctx.env.ref('base.CHF').id,
     }
     ctx.env.ref('base.main_company').write(values)
@@ -65,7 +65,8 @@ def admin_user_password(ctx):
     if os.environ.get('RUNNING_ENV') == 'dev':
         ctx.log_line('Not changing password for dev RUNNING_ENV')
         return
-    ctx.env.user.password_crypt = (
+    ctx.env['res.users']._set_encrypted_password(
+        ctx.env.ref('base.user_admin').id,
         '$pbkdf2-sha512$25000$OIfQei9FyBmD8L6XknIuRQ$rvsse96ZvjG9KO2sBrXb.'
         'iQZLKWMM4mQol3o4dHHpjCPw1tvh80mMVsxvddpdSGhbrStUa8Z75p.dsWMt08.wQ'
     )

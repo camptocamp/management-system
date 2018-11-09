@@ -43,7 +43,7 @@ migration:
           - server_environment
           - server_environment_ir_config_parameter
           #### oca/server-ux
-          - base_technical_features
+          # - base_technical_features
           #### oca/web
           - web_environment_ribbon
           #### core
@@ -52,8 +52,6 @@ migration:
           #### camptocamp/odoo-dj
           # - base_dj
           #### local-src
-          - camptocamp_tools
-          - camptocamp_website_tools
           # - my_addon
     # update step example
     # - version: 12.0.x.y.z
