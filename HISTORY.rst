@@ -26,5 +26,6 @@ latest (unreleased)
 **Build**
 
 * BSCOS-1: Initial build
+* BSCOS-2: Install initial modules
 
 **Documentation**
