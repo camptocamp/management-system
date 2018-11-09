@@ -25,7 +25,16 @@ latest (unreleased)
 
 **Build**
 
-* BSCOS-1: Initial build
+**Documentation**
+
+
+12.0.0.1.0 (2018-11-09)
++++++++++++++++++++++++
+
+**Features and Improvements**
+
 * BSCOS-2: Install initial modules
 
-**Documentation**
+**Build**
+
+* BSCOS-1: Initial build

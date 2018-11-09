@@ -70,3 +70,4 @@ migration:
     #   operations:
     #     post:
     #       - anthem songs.updates.update_10_0_x_y_z::main
+    - version: 12.0.0.1.0
