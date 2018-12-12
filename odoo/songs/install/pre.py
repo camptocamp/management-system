@@ -12,7 +12,7 @@ import anthem
 from ..common import req
 
 MAIN_LANG = "de_DE"
-OPT_LANG = ""
+OPT_LANG = "fr_FR;it_IT;en_US"
 ALL_LANG = [MAIN_LANG] + (OPT_LANG.split(';') if OPT_LANG else [])
 
 

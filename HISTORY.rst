@@ -20,6 +20,7 @@ latest (unreleased)
 +++++++++++++++++++
 
 **Features and Improvements**
+* BSCOS-14: install additional languages
 
 * BSCOS-8: Update repository to last commits
 * BSCOS-13: Update logo
