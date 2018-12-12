@@ -20,16 +20,21 @@ latest (unreleased)
 +++++++++++++++++++
 
 **Features and Improvements**
-* BSCOS-14: install additional languages
-
-* BSCOS-8: Update repository to last commits
-* BSCOS-13: Update logo
 
 **Bugfixes**
 
 **Build**
 
 **Documentation**
+
+
+12.0.1.0.0 (2018-12-12)
++++++++++++++++++++++++
+
+**Features and Improvements**
+* BSCOS-14: install additional languages
+* BSCOS-8: Update repository to last commits
+* BSCOS-13: Update logo
 
 
 12.0.0.1.0 (2018-11-09)
