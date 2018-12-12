@@ -20,6 +20,7 @@ latest (unreleased)
 +++++++++++++++++++
 
 **Features and Improvements**
+* BSCOS-14: install additional languages
 
 **Bugfixes**
 
