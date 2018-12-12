@@ -22,6 +22,7 @@ latest (unreleased)
 **Features and Improvements**
 
 * BSCOS-8: Update repository to last commits
+* BSCOS-13: Update logo
 
 **Bugfixes**
 
