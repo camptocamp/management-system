@@ -21,6 +21,9 @@ latest (unreleased)
 
 **Features and Improvements**
 
+* BSCOS-22: Mail server setting for integration instances
+* BSCOS-23: Mail server setting for production instances
+
 **Bugfixes**
 
 **Build**
