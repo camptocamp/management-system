@@ -28,6 +28,8 @@ latest (unreleased)
 
 **Build**
 
+* BSCOS-17: Update src + enterprise to latest
+
 **Documentation**
 
 
