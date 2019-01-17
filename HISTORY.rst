@@ -21,16 +21,24 @@ latest (unreleased)
 
 **Features and Improvements**
 
-* BSCOS-22: Mail server setting for integration instances
-* BSCOS-23: Mail server setting for production instances
-
 **Bugfixes**
 
 **Build**
 
-* BSCOS-17: Update src + enterprise to latest
-
 **Documentation**
+
+
+12.0.1.1.0 (2019-01-17)
++++++++++++++++++++++++
+
+**Features and Improvements**
+
+* BSCOS-22: Mail server setting for integration instances
+* BSCOS-23: Mail server setting for production instances
+
+**Build**
+
+* BSCOS-17: Update src + enterprise to latest
 
 
 12.0.1.0.0 (2018-12-12)
