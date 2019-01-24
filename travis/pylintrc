@@ -29,21 +29,24 @@ load-plugins=pylint_odoo
 
 [MESSAGES CONTROL]
 # first one are standard pylint errors
-disable=missing-docstring,
-        too-few-public-methods,
-        import-error,
-        protected-access,  # Easy to solve. But with our actual codestyle, it may cause a lot of false positive
-        wrong-import-order,  # I don't like this one. Can we ignore it?
-        bad-continuation,
-        duplicate-code  # Could be ignored only on __openerp__.py files
-        manifest-required-author,  # OCA
-        website-manifest-key-not-valid-uri,  # OCA
-        manifest-deprecated-key,  # OCA
-        attribute-string-redundant,  # OCA
-        missing-readme,  # OCA
-        missing-return,  # OCA
-        odoo-addons-relative-import,  # OCA
+disable=all
 
+enable=anomalous-backslash-in-string,
+    assignment-from-none,
+    dangerous-default-value,
+    duplicate-key,
+    missing-import-error,
+    missing-manifest-dependency,
+    pointless-statement,
+    pointless-string-statement,
+    print-statement,
+    redundant-keyword-arg,
+    reimported,
+    relative-import,
+    return-in-init,
+    rst-syntax-error,
+    too-few-format-args,
+    unreachable,
 
 [REPORTS]
 
