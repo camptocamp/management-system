@@ -21,6 +21,9 @@ latest (unreleased)
 
 **Features and Improvements**
 
+* BSCOS-35: Use pivot view as default for HR Attendances report
+* BSCOS-36: Use pivot view as default for HR Leaves report
+
 **Bugfixes**
 
 **Build**
