@@ -85,4 +85,7 @@ migration:
     - version: 12.0.1.2.0
       addons:
         upgrade:
+          #### local-sr
           - cosanum_hr
+          #### core
+          - base

@@ -26,6 +26,8 @@ latest (unreleased)
 
 **Bugfixes**
 
+* BSCOS-38: Upgrade core to have latest fixes for hr.leaves
+
 **Build**
 
 **Documentation**
