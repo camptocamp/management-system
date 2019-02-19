@@ -72,10 +72,10 @@
 ;	path = odoo/external-src/event
 ;	url = git@github.com:OCA/event.git
 ;	branch = 12.0
-;[submodule "odoo/external-src/hr"]
-;	path = odoo/external-src/hr
-;	url = git@github.com:OCA/hr.git
-;	branch = 12.0
+[submodule "odoo/external-src/hr"]
+	path = odoo/external-src/hr
+	url = git@github.com:OCA/hr.git
+	branch = 12.0
 ;[submodule "odoo/external-src/intrastat"]
 ;	path = odoo/external-src/intrastat
 ;	url = git@github.com:OCA/intrastat.git

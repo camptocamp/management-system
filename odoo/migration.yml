@@ -48,6 +48,8 @@ migration:
           # - base_technical_features
           #### oca/web
           - web_environment_ribbon
+          #### oca/hr
+          - hr_attendance_report_theoretical_time
           #### core
           - calendar
           - contacts
@@ -89,3 +91,5 @@ migration:
           - cosanum_hr
           #### core
           - base
+          #### OCA
+          - hr_attendance_report_theoretical_time
