@@ -23,7 +23,8 @@ latest (unreleased)
 
 * BSCOS-35: Use pivot view as default for HR Attendances report
 * BSCOS-36: Use pivot view as default for HR Leaves report
-
+* BSCOS-41: Install hr_attendance_theoretical_time_report
+ 
 **Bugfixes**
 
 * BSCOS-38: Upgrade core to have latest fixes for hr.leaves
