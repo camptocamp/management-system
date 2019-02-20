@@ -21,6 +21,18 @@ latest (unreleased)
 
 **Features and Improvements**
 
+**Bugfixes**
+
+**Build**
+
+**Documentation**
+
+
+12.0.1.2.0 (2019-02-20)
++++++++++++++++++++++++
+
+**Features and Improvements**
+
 * BSCOS-35: Use pivot view as default for HR Attendances report
 * BSCOS-36: Use pivot view as default for HR Leaves report
 * BSCOS-41: Install hr_attendance_theoretical_time_report
@@ -28,10 +40,6 @@ latest (unreleased)
 **Bugfixes**
 
 * BSCOS-38: Upgrade core to have latest fixes for hr.leaves
-
-**Build**
-
-**Documentation**
 
 
 12.0.1.1.0 (2019-01-17)
