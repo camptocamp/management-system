@@ -23,6 +23,8 @@ latest (unreleased)
 
 **Bugfixes**
 
+* BSCOS-47: Make sure to have po files in docker image
+
 **Build**
 
 **Documentation**
