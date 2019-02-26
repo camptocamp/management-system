@@ -93,3 +93,4 @@ migration:
           - base
           #### OCA
           - hr_attendance_report_theoretical_time
+    - version: 12.0.1.2.1

@@ -23,11 +23,17 @@ latest (unreleased)
 
 **Bugfixes**
 
-* BSCOS-47: Make sure to have po files in docker image
-
 **Build**
 
 **Documentation**
+
+
+12.0.1.2.1 (2019-02-26)
++++++++++++++++++++++++
+
+**Bugfixes**
+
+* BSCOS-47: Make sure to have po files in docker image
 
 
 12.0.1.2.0 (2019-02-20)
