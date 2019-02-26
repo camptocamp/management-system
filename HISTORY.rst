@@ -22,6 +22,7 @@ latest (unreleased)
 **Features and Improvements**
 
 * BSCOS-39: Update mail servers configuration
+* BSCOS-44: Use current year and my attendance as default filters
 
 **Bugfixes**
 
