@@ -21,6 +21,8 @@ latest (unreleased)
 
 **Features and Improvements**
 
+* BSCOS-39: Update mail servers configuration
+
 **Bugfixes**
 
 **Build**
