@@ -23,6 +23,7 @@ latest (unreleased)
 
 * BSCOS-39: Update mail servers configuration
 * BSCOS-44: Use current year and my attendance as default filters
+* BSCOS-52: Add Company Group
 
 **Bugfixes**
 

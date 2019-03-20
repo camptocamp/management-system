@@ -41,6 +41,8 @@ migration:
           - web_environment_ribbon
           #### oca/hr
           - hr_attendance_report_theoretical_time
+          #### oca/partner-contact
+          - partner_company_group
           #### core
           - calendar
           - contacts
@@ -56,6 +58,7 @@ migration:
           # - base_dj
           #### local-src
           - cosanum_hr
+          - cosanum_contact
     # update step example
     # - version: 12.0.x.y.z
     #   addons:
@@ -91,6 +94,8 @@ migration:
           #### OCA
           - hr_attendance_report_theoretical_time
           - cosanum_hr
+          - partner_company_group
+          - cosanum_contact
           #### core
           - base
       modes:

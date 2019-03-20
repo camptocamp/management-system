@@ -67,6 +67,7 @@ RUN cd /odoo && pip install -r src_requirements.txt
 ENV ADDONS_PATH="/odoo/external-src/odoo-cloud-platform, \
   /odoo/external-src/enterprise, \
   /odoo/external-src/hr, \
+  /odoo/external-src/partner-contact, \
   /odoo/external-src/server-env, \
   /odoo/external-src/server-ux, \
   /odoo/external-src/web, \
