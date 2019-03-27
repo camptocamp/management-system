@@ -1,3 +1,9 @@
+<!--
+This file has been generated with 'invoke project.sync'.
+Do not modify. Any manual change will be lost.
+Please propose your modification on
+https://github.com/camptocamp/odoo-template instead.
+-->
 # Adding dependencies
 
 ## How to add a Python package
@@ -19,8 +25,7 @@ If the file `odoo/requirements.txt` exists, skip to number 3.
 4. Build again your Docker image: `docker-compose build odoo`
 
 You can also [add dev requirements](./docker-dev.md#extra-dev-packages) which are used on your dev machine but never
-committed.
-
+committed, or might have to [develop on a python dependency](./docker-dev.md#develop-on-a-python-dependency).
 
 ## How to add a Debian package
 

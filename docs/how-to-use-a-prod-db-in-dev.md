@@ -1,3 +1,9 @@
+<!--
+This file has been generated with 'invoke project.sync'.
+Do not modify. Any manual change will be lost.
+Please propose your modification on
+https://github.com/camptocamp/odoo-template instead.
+-->
 # How to use a PROD DB in DEV mode
 
 ## Get a dump locally
@@ -34,7 +40,7 @@ This is to be used only in case you can't get a dump from odoo-dump-bag
     Open a second terminal.
 
     ```
-    pg_dump --format=c -h localhost -p 5555 -U old_dream_6085 old_dream_6085 -O --file /path/to/backups/Cosanum-$(date +%Y-%m-%d).pg
+    pg_dump --format=c -h localhost -p 5555 -U old_dream_6085 old_dream_6085 -O --file /path/to/backups/cosanum-$(date +%Y-%m-%d).pg
     ```
 
     Replace DB NAME and user with the names of your project DB.
@@ -58,7 +64,7 @@ Now that you have a production DB dump on your computer, you want to load it so 
 2. Load the production dump :
 
     ```
-    docker-compose run --rm odoo pg_restore -p 5432 -d prod < /path/to/backups/Cosanum-$(date +%Y-%m-%d).pg
+    docker-compose run --rm odoo pg_restore -p 5432 -d prod < /path/to/backups/cosanum-$(date +%Y-%m-%d).pg
     ```
 
 3. Now you can start Odoo setting DB_NAME to prod :

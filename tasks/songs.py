@@ -1,10 +1,18 @@
 # -*- coding: utf-8 -*-
 # This file has been generated with 'invoke project.sync'.
 # Do not modify. Any manual change will be lost.
+# Please propose your modification on
+# https://github.com/camptocamp/odoo-template instead.
+# This file has been generated with 'invoke project.sync'.
+# Do not modify. Any manual change will be lost.
 # Copyright 2016 Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 import io
 import zipfile
+
+from invoke import task
+
+from .common import exit_msg
 
 try:
     # Python 2
@@ -15,10 +23,9 @@ except ImportError:
 try:
     import requests
 except ImportError:
-    print('Please install `requests`')
+    print('Missing python `requests` from requirements')
+    print('Please run `pip install -r tasks/requirements.txt`')
 
-from invoke import task
-from .common import exit_msg
 
 
 def odoo_login(base_url, login, password, db):
@@ -35,9 +42,7 @@ def odoo_login(base_url, login, password, db):
         },
     }
 
-    headers = {
-        'Content-type': 'application/json'
-    }
+    headers = {'Content-type': 'application/json'}
 
     resp = requests.post(url, json=data, headers=headers)
     r_data = resp.json()
@@ -45,8 +50,15 @@ def odoo_login(base_url, login, password, db):
 
 
 @task(name='rip')
-def rip(ctx, location, login='admin', password='admin',
-        db='odoodb', dryrun=False, data_path='./odoo/data'):
+def rip(
+    ctx,
+    location,
+    login='admin',
+    password='admin',
+    db='odoodb',
+    dryrun=False,
+    data_path='./odoo/data',
+):
     """Open or download a zipfile containing songs.
 
     Unzip and copy the files into current project path.
@@ -64,16 +76,15 @@ def rip(ctx, location, login='admin', password='admin',
             "It can be an url or a local path\n\n"
             "invoke songs.rip /tmp/songs.zip\n"
             "invoke songs.rip "
-            "http://project:8888/dj/download/compilation/account-default-1")
+            "http://project:8888/dj/download/compilation/account-default-1"
+        )
     zipdata = None
     # download file from url
     if location.startswith('http'):
         url = urlparse(location)
-        base_url = "%s://%s" % (url.scheme, url.netloc)
+        base_url = "{}://{}".format(url.scheme, url.netloc)
         session_id = odoo_login(base_url, login, password, db)
-        cookies = {
-            "session_id": session_id,
-        }
+        cookies = {"session_id": session_id}
         resp = requests.get(location, cookies=cookies)
         resp.raise_for_status()
         zipdata = io.BytesIO()
@@ -105,7 +116,7 @@ def handle_zip_data(zipdata, dryrun=False, data_path='./odoo/data'):
                     # TODO: we assume songs path
                     # is on the same level of data path
                     dest_path = '/'.join(data_path.split('/')[:2])
-                print("Extracting %s/%s" % (dest_path, path))
+                print("Extracting {}/{}".format(dest_path, path))
                 zf.extract(path, dest_path)
 
     print('-' * 79)
