@@ -26,6 +26,8 @@ latest (unreleased)
 
 **Bugfixes**
 
+* BSCOS-42: Update Odoo to fix Issue with axis swap
+
 **Build**
 
 **Documentation**
