@@ -1,22 +1,38 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# This file has been generated with 'invoke project.sync'.
+# Do not modify. Any manual change will be lost.
+# Please propose your modification on
+# https://github.com/camptocamp/odoo-template instead.
 # Download submodules from Github zip archive url
 # Keep standard update form private repositories
 # listed in `travis/private_repo`
 #
 import os
 import shutil
-import urllib2
-import yaml
 import zipfile
 
+import yaml
 from git import Repo
+
+try:
+    # For Python 3.0 and later
+    import urllib.request as requestlib
+except ImportError:
+    # Fall back to Python 2's urllib2
+    import urllib2 as requestlib
+
+
+script_path = os.path.dirname(os.path.realpath(__file__))
+root_path = os.path.abspath(os.path.join(script_path, os.pardir))
+
+os.chdir(root_path)
 
 https_proxy = os.environ.get('https_proxy')
 if https_proxy:
-    proxy = urllib2.ProxyHandler({'https': https_proxy})
-    opener = urllib2.build_opener(proxy)
-    urllib2.install_opener(opener)
+    proxy = requestlib.ProxyHandler({'https': https_proxy})
+    opener = requestlib.build_opener(proxy)
+    requestlib.install_opener(opener)
 
 DL_DIR = 'download'
 ZIP_PATH = '%s/submodule.zip' % DL_DIR
@@ -71,14 +87,14 @@ for sub in submodules:
 
 
 for sub in submodules:
-    print "Getting submodule %s" % sub.path
+    print("Getting submodule %s" % sub.path)
     use_archive = sub.path not in private_repos
     if use_archive:
         url = git_url(sub.url)
-        archive_url = "%s/archive/%s.zip" % (url, sub.hexsha)
-        request = urllib2.Request(archive_url)
+        archive_url = "{}/archive/{}.zip".format(url, sub.hexsha)
+        request = requestlib.Request(archive_url)
         with open(ZIP_PATH, 'wb') as f:
-            f.write(urllib2.urlopen(request).read())
+            f.write(requestlib.urlopen(request).read())
         try:
             with zipfile.ZipFile(ZIP_PATH) as zf:
                 zf.extractall(DL_DIR)
@@ -86,13 +102,17 @@ for sub in submodules:
             # fall back to standard download
             use_archive = False
             with open(ZIP_PATH) as f:
-                print ("Getting archive failed with error %s. Falling back to "
-                       "git clone." % f.read())
+                print(
+                    "Getting archive failed with error %s. Falling back to "
+                    "git clone." % f.read()
+                )
             os.remove(ZIP_PATH)
         except Exception as e:
             use_archive = False
-            print ("Getting archive failed with error %s. Falling back to "
-                   "git clone." % e.message)
+            print(
+                "Getting archive failed with error %s. Falling back to "
+                "git clone." % e.message
+            )
         else:
             os.remove(ZIP_PATH)
             os.removedirs(sub.path)

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+This file has been generated with 'invoke project.sync'.
+Do not modify. Any manual change will be lost.
+Please propose your modification on
+https://github.com/camptocamp/odoo-template instead.
+-->
 <odoo>
     <!--This is a simplified copy of web.login_layout because we want to make
     this reliable cross-version as there are too many modules overriding base
@@ -8,8 +14,8 @@
             <t t-set="html_data" t-value="{'style': 'height: 100%;'}"/>
             <t t-set="head">
                 <t t-call-assets="web.assets_common" t-js="false"/>
-                <t t-call-assets="web.assets_frontend" t-js="false"/>
                 <t t-call-assets="web.assets_common" t-css="false"/>
+                <t t-call-assets="web.assets_frontend" t-js="false"/>
                 <t t-call-assets="web.assets_frontend" t-css="false"/>
             </t>
             <t t-set="body_classname" t-value="'container'"/>

@@ -1,13 +1,4 @@
 migration:
-  options:
-    install_command: odoo
-    ## PLATFORM
-    ## For v9.0 or v10.0
-    # install_args: --load=web,web_kanban,session_redis,attachment_s3,logging_json      # Exoscale
-    # install_args: --load=web,web_kanban,session_redis,attachment_swift,logging_json   # OVH
-    ## For version >= 11.0
-    install_args: --load=web,session_redis,attachment_s3,logging_json      # Exoscale
-    # install_args: --load=web,session_redis,attachment_swift,logging_json   # OVH
   versions:
     - version: setup
       operations:

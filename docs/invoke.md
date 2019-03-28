@@ -1,3 +1,9 @@
+<!--
+This file has been generated with 'invoke project.sync'.
+Do not modify. Any manual change will be lost.
+Please propose your modification on
+https://github.com/camptocamp/odoo-template instead.
+-->
 # Using automated tasks with Invoke
 
 This project uses `invoke` to run some automated tasks.
@@ -46,6 +52,10 @@ bump.release changes following files (which must be commited):
 Copy files (such as docs) from the
 [odoo-template](https://github.com/camptocamp/odoo-template).
 It should be run at a regular basis.
+
+**The file `.sync.yml` is not synced.
+You can add itself in the following list to update it once
+It will obviously get out of sync again. This is on purpose.**
 
 ```
 invoke project.sync
@@ -145,6 +155,23 @@ See https://github.com/camptocamp/odoo-dj for more details about dj.compilation
 invoke songs.rip http://127.0.0.1:8888/dj/download/compilation/account-default-1 [--login admin] [--password admin] [--db odoodb]
 # or
 invoke songs.rip /tmp/songs.zip
+```
+
+### migrate.check-modules
+
+Used for migration projects,
+give information to know which modules are finally installed into databases:
+
+* Migrated database
+  * The database returned by Odoo, without applying any script
+* Full database
+  * The migrated database on which full build has been applied
+* Sample database
+  * The sample database without customer data
+
+_Example of calling:_
+```
+invoke migrate.check-modules odoodb-migrated odoodb-full odoodb-sample
 ```
 
 ## Custom tasks
