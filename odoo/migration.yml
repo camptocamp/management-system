@@ -102,5 +102,5 @@ migration:
         full:
           operations:
             pre:
-              - anthem songs.updates.update_12_0_1_2_2::full
+              - anthem songs.updates.update_12_0_1_3_0::full
               - anthem songs.install.email::main
