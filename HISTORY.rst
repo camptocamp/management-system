@@ -26,6 +26,7 @@ latest (unreleased)
 * BSCOS-52: Add Company Group
 * BSCOS-89: Add vendor_id field on Helpdesk
 * BSCOS-76: The description field on Helpdesk should be Html
+* BSCOS-60: Install partner-conact
 
 **Bugfixes**
 
