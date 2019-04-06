@@ -12,7 +12,10 @@
     ],
     'website': 'http://www.camptocamp.com',
     'data': [
-        'views/contact_view.xml'
+        'views/contact_view.xml',
+        'views/customer_value_view.xml',
+        'views/marketing_type_view.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
 }

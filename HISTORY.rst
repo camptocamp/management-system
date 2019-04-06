@@ -27,6 +27,7 @@ latest (unreleased)
 * BSCOS-89: Add vendor_id field on Helpdesk
 * BSCOS-76: The description field on Helpdesk should be Html
 * BSCOS-60: Install partner-conact
+* BSCOS-62: Add new fields and models to res.partner
 
 **Bugfixes**
 

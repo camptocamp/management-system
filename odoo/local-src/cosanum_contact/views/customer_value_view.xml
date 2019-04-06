@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="customer_value_form" model="ir.ui.view">
+        <field name="name">customer.value.form</field>
+        <field name="model">customer.value</field>
+        <field name="arch" type="xml">
+            <form string="Customer values">
+                <sheet>
+                    <label for="Name"  string="Customer Value"/>
+                    <field name="name" />
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="customer_value_tree" model="ir.ui.view">
+        <field name="name">customer.value.tree</field>
+        <field name="model">customer.value</field>
+        <field name="arch" type="xml">
+            <tree string="Customer values" editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="customer_value_action" model="ir.actions.act_window">
+        <field name="name">Customer Values</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">customer.value</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Define a new kind of customer value
+          </p>
+        </field>
+    </record>
+
+</odoo>
