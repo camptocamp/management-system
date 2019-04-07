@@ -39,3 +39,14 @@ class Contact(models.Model):
         digits=(16, 2),
         string='Customer number of FTE',
     )
+
+    @api.depends('ref')
+    def _compute_display_name(self):
+        # override to inject dependency on 'ref'
+        return super()._compute_display_name()
+
+    def _get_name(self):
+        name = super()._get_name()
+        if self.is_company and self.ref:
+            return '{} ({})'.format(name, self.ref)
+        return name
