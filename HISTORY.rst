@@ -28,6 +28,8 @@ latest (unreleased)
 * BSCOS-76: The description field on Helpdesk should be Html
 * BSCOS-60: Install partner-conact
 * BSCOS-62: Add new fields and models to res.partner
+* BSCOS-90: Display new suffix fields in opportunity
+* BSCOS-61: Override name_get for res.partner
 
 **Bugfixes**
 
