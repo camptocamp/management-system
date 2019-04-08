@@ -25,6 +25,7 @@ latest (unreleased)
 * BSCOS-44: Use current year and my attendance as default filters
 * BSCOS-52: Add Company Group
 * BSCOS-89: Add vendor_id field on Helpdesk
+* BSCOS-76: The description field on Helpdesk should be Html
 
 **Bugfixes**
 
