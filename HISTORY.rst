@@ -24,12 +24,16 @@ latest (unreleased)
 * BSCOS-39: Update mail servers configuration
 * BSCOS-44: Use current year and my attendance as default filters
 * BSCOS-52: Add Company Group
+* BSCOS-89: Add vendor_id field on Helpdesk
+* BSCOS-76: The description field on Helpdesk should be Html
 
 **Bugfixes**
 
 * BSCOS-42: Update Odoo to fix Issue with axis swap
 
 **Build**
+
+* BSCOS-89: Install Helpdesk
 
 **Documentation**
 
