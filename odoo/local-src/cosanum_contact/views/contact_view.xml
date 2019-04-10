@@ -19,6 +19,8 @@
                 <field name="customer_fte_number" />
             </field>
             <xpath expr="//field[@name='child_ids']/form//field[@name='comment']" position="after">
+                <field name="lang"/>
+                <field name="category_id" options="{'color_field': 'color', 'no_create_edit': True}" widget="many2many_tags"/>
                 <field name="marketing_type_ids" options="{'color_field': 'color', 'no_create_edit': True}" widget="many2many_tags"/>
             </xpath>
         </field>
