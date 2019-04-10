@@ -32,6 +32,7 @@ latest (unreleased)
 * BSCOS-62: Add new fields and models to res.partner
 * BSCOS-89: Install Helpdesk
 * BSCOS-90: Display new suffix fields in opportunity
+* BSCOS-100: Language and tags on contact creation form
 
 **Bugfixes**
 
