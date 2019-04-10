@@ -28,9 +28,10 @@ latest (unreleased)
 * BSCOS-76: The description field on Helpdesk should be Html
 * BSCOS-60: Install partner-conact
 * BSCOS-60: Install partner-contact
-* BSCOS-62: Add new fields and models to res.partner
-* BSCOS-90: Display new suffix fields in opportunity
 * BSCOS-61: Override name_get for res.partner
+* BSCOS-62: Add new fields and models to res.partner
+* BSCOS-89: Install Helpdesk
+* BSCOS-90: Display new suffix fields in opportunity
 
 **Bugfixes**
 
@@ -38,7 +39,7 @@ latest (unreleased)
 
 **Build**
 
-* BSCOS-89: Install Helpdesk
+* BSRD-199: Update submodule odoo-cloud-platform
 
 **Documentation**
 

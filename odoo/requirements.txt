@@ -13,7 +13,7 @@ python-json-logger==0.1.5
 statsd==3.2.1
 
 ## PLATFORM, for s3 storage at Exoscale
-boto==2.42.0
+boto3==1.9.102
 
 ## PLATFORM, for Swift storage at OVH
 #python-swiftclient==3.4.0
