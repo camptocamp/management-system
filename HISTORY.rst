@@ -33,6 +33,7 @@ latest (unreleased)
 * BSCOS-89: Install Helpdesk
 * BSCOS-90: Display new suffix fields in opportunity
 * BSCOS-100: Language and tags on contact creation form
+* BSCOS-94: Install submodules for reporting and CH localization
 
 **Bugfixes**
 
@@ -41,6 +42,7 @@ latest (unreleased)
 **Build**
 
 * BSRD-199: Update submodule odoo-cloud-platform
+* BSCOS-94: Add submodules for reporting and CH localization
 
 **Documentation**
 

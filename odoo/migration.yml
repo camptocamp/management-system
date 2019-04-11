@@ -95,8 +95,20 @@ migration:
     - version: 12.0.1.3.0
       addons:
         upgrade:
+          #### oca/account-closing
+          - account_multicurrency_revaluation
           #### oca/hr
           - hr_attendance_report_theoretical_time
+          #### oca/l10n-switzerland
+          - l10n_ch
+          - l10n_ch_mis_reports
+          - l10n_ch_zip
+          - l10n_ch_states
+          - l10n_ch_bank
+          - l10n_ch_base_bank
+          #### oca/mis-builder
+          - mis_builder_budget
+          - mis_builder
           #### oca/partner-contact
           - partner_firstname
           - partner_company_group
@@ -105,12 +117,17 @@ migration:
           - cosanum_contact
           - cosanum_crm
           - cosanum_helpdesk
+          #### enterprise
+          - l10n_ch_reports
+          - account_accountant
+          - documents
+          - account_deferred_revenue
           #### core
           - base
+          - account_cancel
       modes:
         full:
           operations:
             pre:
               - anthem songs.updates.update_12_0_1_3_0::full
               - anthem songs.install.email::main
-

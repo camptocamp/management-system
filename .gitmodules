@@ -20,10 +20,10 @@
 	branch = 12.0
 
 ; OCA
-;[submodule "odoo/external-src/account-closing"]
-;	path = odoo/external-src/account-closing
-;	url = git@github.com:OCA/account-closing.git
-;	branch = 12.0
+[submodule "odoo/external-src/account-closing"]
+	path = odoo/external-src/account-closing
+	url = git@github.com:OCA/account-closing.git
+	branch = 12.0
 ;[submodule "odoo/external-src/account-consolidation"]
 ;	path = odoo/external-src/account-consolidation
 ;	url = git@github.com:OCA/account-consolidation.git
@@ -119,10 +119,10 @@
 ;	path = odoo/external-src/report-print-send
 ;	url = git@github.com:OCA/report-print-send.git
 ;	branch = 12.0
-;[submodule "odoo/external-src/reporting-engine"]
-;	path = odoo/external-src/reporting-engine
-;	url = git@github.com:OCA/reporting-engine.git
-;	branch = 12.0
+[submodule "odoo/external-src/reporting-engine"]
+	path = odoo/external-src/reporting-engine
+	url = git@github.com:OCA/reporting-engine.git
+	branch = 12.0
 ;[submodule "odoo/external-src/sale-workflow"]
 ;	path = odoo/external-src/sale-workflow
 ;	url = git@github.com:OCA/sale-workflow.git
@@ -169,10 +169,14 @@
 ;	path = odoo/external-src/l10n-france
 ;	url = git@github.com:OCA/l10n-france.git
 ;	branch = 12.0
-;[submodule "odoo/external-src/l10n-switzerland"]
-;	path = odoo/external-src/l10n-switzerland
-;	url = git@github.com:OCA/l10n-switzerland.git
-;	branch = 12.0
+[submodule "odoo/external-src/l10n-switzerland"]
+	path = odoo/external-src/l10n-switzerland
+	url = git@github.com:OCA/l10n-switzerland.git
+	branch = 12.0
+[submodule "odoo/external-src/mis-builder"]
+	path = odoo/external-src/mis-builder
+	url = git@github.com:OCA/mis-builder.git
+	branch = 12.0
 
 ; Connectors
 ;[submodule "odoo/external-src/queue"]
