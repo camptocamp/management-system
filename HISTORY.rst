@@ -21,6 +21,18 @@ latest (unreleased)
 
 **Features and Improvements**
 
+**Bugfixes**
+
+**Build**
+
+**Documentation**
+
+
+12.0.1.3.0 (2019-04-18)
++++++++++++++++++++++++
+
+**Features and Improvements**
+
 * BSCOS-39: Update mail servers configuration
 * BSCOS-44: Use current year and my attendance as default filters
 * BSCOS-52: Add Company Group
