@@ -25,6 +25,7 @@ latest (unreleased)
   suffix
 * BSCOS-151: Change columns in res.partner List view
 * BSCOS-152: Migrate and install `management-system` modules to version 12.0
+* BSCOS-103: 'anonymize' the description of holiday calendar events
 
 **Bugfixes**
 
