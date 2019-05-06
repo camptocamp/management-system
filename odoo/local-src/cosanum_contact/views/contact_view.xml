@@ -46,9 +46,12 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_res_partner_filter" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='name']" position="after">
-                <field name="ref" filter_domain="[('ref','ilike',self),]"/>
-            </xpath>
+            <field name="name" position="replace" />
+            <field name="company_group_id" position="replace" >
+                <field name="name" />
+                <field name="company_name_suffix1" />
+                <field name="company_group_id" />
+            </field>
         </field>
     </record>
 
