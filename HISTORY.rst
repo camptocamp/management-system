@@ -21,6 +21,8 @@ latest (unreleased)
 
 **Features and Improvements**
 
+*BSCOS-109: Implement suffix field in name computation
+
 **Bugfixes**
 
 **Build**
