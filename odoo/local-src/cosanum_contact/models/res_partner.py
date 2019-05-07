@@ -40,13 +40,17 @@ class Contact(models.Model):
         string='Customer number of FTE',
     )
 
-    @api.depends('ref')
+    @api.depends('ref', 'company_name_suffix1')
     def _compute_display_name(self):
-        # override to inject dependency on 'ref'
+        # override to inject dependency on fields
         return super()._compute_display_name()
 
     def _get_name(self):
         name = super()._get_name()
-        if self.is_company and self.ref:
+        if self.is_company and self.company_name_suffix1 and self.ref:
+            return '{} {} ({})'.format(
+                name, self.company_name_suffix1, self.ref
+            )
+        elif self.is_company and self.ref:
             return '{} ({})'.format(name, self.ref)
         return name
