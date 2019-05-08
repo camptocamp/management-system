@@ -21,6 +21,18 @@ latest (unreleased)
 
 **Features and Improvements**
 
+**Bugfixes**
+
+**Build**
+
+**Documentation**
+
+
+12.0.1.3.1 (2019-05-08)
++++++++++++++++++++++++
+
+**Features and Improvements**
+
 * BSCOS-109: Implement suffix field in name computation
 * BSCOS-108: Change search view for contact menu
 
