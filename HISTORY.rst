@@ -28,23 +28,13 @@ latest (unreleased)
 **Documentation**
 
 
-12.0.1.3.1 (2019-05-08)
+12.0.1.3.2 (2019-05-08)
 +++++++++++++++++++++++
 
 **Features and Improvements**
 
 * BSCOS-109: Implement suffix field in name computation
 * BSCOS-108: Change search view for contact menu
-
-**Bugfixes**
-
-**Build**
-
-**Documentation**
-
-
-12.0.1.3.0 (2019-04-18)
-+++++++++++++++++++++++
 
 **Features and Improvements**
 
@@ -71,7 +61,13 @@ latest (unreleased)
 * BSRD-199: Update submodule odoo-cloud-platform
 * BSCOS-94: Add submodules for reporting and CH localization
 
-**Documentation**
+
+12.0.1.3.1 (2019-05-08) [YANKED]
+++++++++++++++++++++++++++++++++
+
+
+12.0.1.3.0 (2019-04-18) [YANKED]
+++++++++++++++++++++++++++++++++
 
 
 12.0.1.2.1 (2019-02-26)
