@@ -23,6 +23,8 @@ latest (unreleased)
 
 **Bugfixes**
 
+* BSCOS-108: Wrong field in a filter
+
 **Build**
 
 **Documentation**

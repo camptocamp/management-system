@@ -133,3 +133,8 @@ migration:
             pre:
               - anthem songs.updates.update_12_0_1_3_0::full
               - anthem songs.install.email::main
+    - version: 12.0.1.3.3
+      addons:
+        upgrade:
+          #### local-src
+          - cosanum_contact
