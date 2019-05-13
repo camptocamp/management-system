@@ -49,8 +49,8 @@ class Contact(models.Model):
         name = super()._get_name()
         if self.is_company and self.company_name_suffix1 and self.ref:
             return '{} {} ({})'.format(
-                name, self.company_name_suffix1, self.ref
+                self.name, self.company_name_suffix1, self.ref
             )
         elif self.is_company and self.ref:
-            return '{} ({})'.format(name, self.ref)
+            return '{} ({})'.format(self.name, self.ref)
         return name
