@@ -18,11 +18,21 @@ class Contact(models.Model):
         string='Insurance',
         domain=[('is_company', '=', True)]
     )
+    firstname = fields.Char(
+        size=30,
+    )
+    lastname = fields.Char(
+        size=30,
+    )
     company_name_suffix1 = fields.Char(
         string='Company Name Suffix 1',
+        size=30,
+        copy=False,
     )
     company_name_suffix2 = fields.Char(
         string='Company Name Suffix 2',
+        size=30,
+        copy=False,
     )
     customer_value_id = fields.Many2one(
         comodel_name='customer.value',

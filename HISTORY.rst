@@ -21,6 +21,9 @@ latest (unreleased)
 
 **Features and Improvements**
 
+* BSCOS-149: constrains for fields size firstname, lastname, first and second
+  suffix
+
 **Bugfixes**
 
 * BSCOS-108: Wrong field in a filter
