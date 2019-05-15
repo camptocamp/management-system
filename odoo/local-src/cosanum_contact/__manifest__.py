@@ -9,6 +9,7 @@
     'license': 'AGPL-3',
     'depends': [
         'base',
+        'partner_firstname',
         'partner_company_group',
     ],
     'website': 'http://www.camptocamp.com',
