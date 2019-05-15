@@ -23,6 +23,7 @@ latest (unreleased)
 
 * BSCOS-149: constrains for fields size firstname, lastname, first and second
   suffix
+* BSCOS-151: Change columns in res.partner List view
 
 **Bugfixes**
 
