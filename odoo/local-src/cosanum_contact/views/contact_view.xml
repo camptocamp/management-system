@@ -31,13 +31,21 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_tree" />
         <field name="arch" type="xml">
-        <xpath expr="//field[@name='email']" position="after">
-            <field name="company_name_suffix1"/>
+
+          <xpath expr="//field[@name='phone']" position="before">
             <field name="company_name_suffix2"/>
-            <field name="customer_value_id" options="{'no_create_edit': True,}"/>
-            <field name="marketing_type_ids" options="{'color_field': 'color', 'no_create_edit': True,}" widget="many2many_tags"/>
-            <field name="customer_fte_number" />
-        </xpath>
+            <field name="street"/>
+            <field name="street2"/>
+            <field name="zip"/>
+            <field name="city"/>
+          </xpath>
+
+          <xpath expr="//field[@name='email']" position="after">
+            <field name="user_id"/>
+            <field name="write_date"/>
+            <field name="write_uid"/>
+          </xpath>
+
         </field>
     </record>
 
