@@ -209,7 +209,7 @@ class MgmtsystemNonconformity(models.Model):
             'ref': self.env['ir.sequence'].next_by_code(
                 'mgmtsystem.nonconformity')
         })
-        return super(MgmtsystemNonconformity, self).create(vals)
+        return super().create(vals)
 
     @api.multi
     def write(self, vals):
@@ -224,7 +224,7 @@ class MgmtsystemNonconformity(models.Model):
                 if nc.kanban_state != 'normal':
                     vals['kanban_state'] = 'normal'
 
-        result = super(MgmtsystemNonconformity, self).write(vals)
+        result = super().write(vals)
 
         # Set/reset the closing date
         if not is_writing and is_state_change:
