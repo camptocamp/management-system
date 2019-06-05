@@ -138,3 +138,4 @@ migration:
         upgrade:
           #### local-src
           - cosanum_contact
+          - document_page_work_instruction
