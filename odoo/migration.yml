@@ -146,3 +146,4 @@ migration:
           - document_page_work_instruction
           - mgmtsystem
           - mgmtsystem_survey
+          - mgmtsystem_action
