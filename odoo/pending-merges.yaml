@@ -22,8 +22,12 @@
      - oca 12.0
      # [12.0][MIG] document page work instruction from 11.0
      - oca refs/pull/248/head
-     # [MIG] 12.0 - mgmtsystem_survey
+     # [MIG] 12.0 mgmtsystem_survey
      - oca refs/pull/249/head
-     # [MIG] 12.0- mgmtsystem_action
+     # [MIG] 12.0 mgmtsystem_action
      - oca refs/pull/245/head
+     # [MIG] 12.0 mgmtsystem_manual
+     - oca refs/pull/246/head
+     # [MIG] 12.0 document_page_procedure
+     - oca refs/pull/250/head
    target: *default_target
