@@ -24,12 +24,15 @@ latest (unreleased)
 * BSCOS-149: constrains for fields size firstname, lastname, first and second
   suffix
 * BSCOS-151: Change columns in res.partner List view
+* BSCOS-152: Migrate and install `management-system` modules to version 12.0
 
 **Bugfixes**
 
 * BSCOS-108: Wrong field in a filter
 
 **Build**
+
+* BSCOS-152: Add submodules `management-system` and `knowledge`
 
 **Documentation**
 

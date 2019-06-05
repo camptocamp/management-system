@@ -14,4 +14,26 @@
      # [12.0][MIG] mail_environment from 11.0
      - oca refs/pull/20/head
    target: &default_target camptocamp merge-branch-2477-master
-
+ ./external-src/management-system:
+   remotes:
+     oca: git@github.com:OCA/management-system.git
+     camptocamp: git@github.com:camptocamp/management-system.git
+   merges:
+     - oca 12.0
+     # [12.0][MIG] document page work instruction from 11.0
+     - oca refs/pull/248/head
+     # [MIG] 12.0 mgmtsystem_survey
+     - oca refs/pull/249/head
+     # [MIG] 12.0 mgmtsystem_action
+     - oca refs/pull/245/head
+     # [MIG] 12.0 mgmtsystem_manual
+     - oca refs/pull/246/head
+     # [MIG] 12.0 document_page_procedure
+     - oca refs/pull/250/head
+     # [MIG] 12.0 mgmtsystem_nonconformity
+     - oca refs/pull/247/head
+     # [MIG] 12.0 - mgmtsystem_review
+     - oca refs/pull/251/head
+     # [MIG] 12.0 document_page_quality_manual
+     - oca refs/pull/253/head
+   target: *default_target

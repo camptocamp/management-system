@@ -44,6 +44,16 @@ migration:
           #### oca/partner-contact
           - partner_firstname
           - partner_company_group
+          #### oca/management-system
+          - mgmtsystem
+          - mgmtsystem_review
+          - mgmtsystem_survey
+          - mgmtsystem_action
+          - mgmtsystem_manual
+          - mgmtsystem_nonconformity
+          - document_page_work_instruction
+          - document_page_procedure
+          - document_page_quality_manual
           #### core
           - calendar
           - contacts
@@ -133,8 +143,18 @@ migration:
             pre:
               - anthem songs.updates.update_12_0_1_3_0::full
               - anthem songs.install.email::main
-    - version: 12.0.1.3.3
+    - version: 12.0.1.4.0
       addons:
         upgrade:
           #### local-src
           - cosanum_contact
+          #### oca/management-system
+          - mgmtsystem
+          - mgmtsystem_review
+          - mgmtsystem_survey
+          - mgmtsystem_action
+          - mgmtsystem_manual
+          - mgmtsystem_nonconformity
+          - document_page_work_instruction
+          - document_page_procedure
+          - document_page_quality_manual
