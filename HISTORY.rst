@@ -21,6 +21,18 @@ latest (unreleased)
 
 **Features and Improvements**
 
+**Bugfixes**
+
+**Build**
+
+**Documentation**
+
+
+12.0.1.4.0 (2019-06-05)
++++++++++++++++++++++++
+
+**Features and Improvements**
+
 * BSCOS-149: constrains for fields size firstname, lastname, first and second
   suffix
 * BSCOS-151: Change columns in res.partner List view
@@ -34,8 +46,6 @@ latest (unreleased)
 **Build**
 
 * BSCOS-152: Add submodules `management-system` and `knowledge`
-
-**Documentation**
 
 
 12.0.1.3.2 (2019-05-08)
