@@ -75,6 +75,7 @@ ENV ADDONS_PATH="/odoo/external-src/odoo-cloud-platform, \
   /odoo/external-src/web, \
   /odoo/external-src/l10n-switzerland, \
   /odoo/external-src/mis-builder, \
+  /odoo/external-src/management-system, \
   /odoo/src/addons, \
   /odoo/local-src" \
   LIMIT_TIME_CPU=86400 \
