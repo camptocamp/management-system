@@ -32,4 +32,6 @@
      - oca refs/pull/250/head
      # [MIG] 12.0 mgmtsystem_nonconformity
      - oca refs/pull/247/head
+     # [MIG] 12.0 - mgmtsystem_review
+     - oca refs/pull/251/head
    target: *default_target

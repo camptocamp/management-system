@@ -45,9 +45,14 @@ migration:
           - partner_firstname
           - partner_company_group
           #### oca/management-system
-          - document_page_work_instruction
           - mgmtsystem
+          - mgmtsystem_review
           - mgmtsystem_survey
+          - mgmtsystem_action
+          - mgmtsystem_manual
+          - mgmtsystem_nonconformity
+          - document_page_work_instruction
+          - document_page_procedure
           #### core
           - calendar
           - contacts
@@ -112,14 +117,6 @@ migration:
           - l10n_ch_states
           - l10n_ch_bank
           - l10n_ch_base_bank
-          #### oca/management-system
-          - mgmtsystem
-          - mgmtsystem_survey
-          - mgmtsystem_action
-          - mgmtsystem_manual
-          - mgmtsystem_nonconformity
-          - document_page_work_instruction
-          - document_page_procedure
           #### oca/mis-builder
           - mis_builder_budget
           - mis_builder
@@ -152,6 +149,7 @@ migration:
           - cosanum_contact
           #### oca/management-system
           - mgmtsystem
+          - mgmtsystem_review
           - mgmtsystem_survey
           - mgmtsystem_action
           - mgmtsystem_manual
