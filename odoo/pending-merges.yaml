@@ -34,4 +34,6 @@
      - oca refs/pull/247/head
      # [MIG] 12.0 - mgmtsystem_review
      - oca refs/pull/251/head
+     # [MIG] 12.0 document_page_quality_manual
+     - oca refs/pull/253/head
    target: *default_target
