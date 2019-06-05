@@ -148,6 +148,7 @@ migration:
         upgrade:
           #### local-src
           - cosanum_contact
+          - cosanum_hr
           #### oca/management-system
           - mgmtsystem
           - mgmtsystem_review
