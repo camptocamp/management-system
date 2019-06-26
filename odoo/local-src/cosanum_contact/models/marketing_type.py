@@ -15,7 +15,5 @@ class MarketingType(models.Model):
         help="Gives the sequence order when"
              " displaying a list of follow-up lines."
     )
-    partner_id = fields.Many2one(
-        comodel_name="res.partner",
-    )
+    partner_ids = fields.Many2many(comodel_name="res.partner")
     color = fields.Integer()

@@ -23,6 +23,8 @@ latest (unreleased)
 
 **Bugfixes**
 
+* BSCOS-173: make marketing_type link many2many
+
 **Build**
 
 **Documentation**

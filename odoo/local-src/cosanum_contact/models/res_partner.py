@@ -39,9 +39,8 @@ class Contact(models.Model):
         string='Customer Value',
         ondelete='restrict',
     )
-    marketing_type_ids = fields.One2many(
+    marketing_type_ids = fields.Many2many(
         comodel_name='marketing.type',
-        inverse_name='partner_id',
         string='Contact marketing type',
         ondelete='restrict',
     )
